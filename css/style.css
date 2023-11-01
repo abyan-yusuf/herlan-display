@@ -41,6 +41,7 @@ body {
   position: absolute;
   top: 50vh;
   right: 30%;
+  animation: circle-clockwise-2 4s linear infinite;
 }
 .circle-5 {
   background-image: linear-gradient(#ef3a17, #f6775e);
@@ -60,6 +61,7 @@ body {
   position: absolute;
   top: 50vh;
   right: 20%;
+  animation: circle-clockwise-2 4s linear infinite;
 }
 
 @keyframes circle-clockwise {
