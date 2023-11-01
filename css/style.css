@@ -1,18 +1,110 @@
 body {
-  background-image: url("../images/bubble1.gif");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: black;
+  position: relative;
+}
+.circle-1 {
+  background-image: linear-gradient(#f962b0, #fd9bcd);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50vh;
+  left: 40%;
+  animation: circle-clockwise 4s linear infinite;
+}
+.circle-2 {
+  background-image: linear-gradient(#f97828, #fba36d);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50vh;
+  right: 40%;
+  animation: circle-anti-clockwise 4s linear infinite;
+  z-index: 1;
+}
+.circle-3 {
+  background-image: linear-gradient(#3e8af9, #88b6fa);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50vh;
+  left: 30%;
+  animation: circle-clockwise-2 4s linear infinite;
+}
+.circle-4 {
+  background-image: linear-gradient(#17e019, #7ef97f);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50vh;
+  right: 30%;
+}
+.circle-5 {
+  background-image: linear-gradient(#ef3a17, #f6775e);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50vh;
+  left: 20%;
+  animation: circle-anti-clockwise 4s linear infinite;
+}
+.circle-6 {
+  background-image: linear-gradient(#be8fd8, #e6c2fb);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50vh;
+  right: 20%;
+}
+
+@keyframes circle-clockwise {
+  0% {
+    transform: rotate(0deg) translate(-140px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translate(-140px) rotate(-360deg);
+  }
+}
+@keyframes circle-clockwise-2 {
+  0% {
+    transform: rotate(0deg) translate(140px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translate(140px) rotate(-360deg);
+  }
+}
+@keyframes circle-anti-clockwise {
+  0% {
+    transform: rotate(360deg) translate(-100px) rotate(-360deg);
+  }
+  100% {
+    transform: rotate(0deg) translate(-150px) rotate(0deg);
+  }
 }
 .customers {
-  color: #fff;
-  border: 2px solid gray;
-  padding: 20px;
+  color: white;
+  font-size: 10px;
+  text-align: center;
+  line-height: 20px;
 }
 .customers-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  min-height: 100vh;
-  width: 100%;
+  background-image: linear-gradient(#ef3a17, #f6775e);
+  width:fit-content;
+  height: 100px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50vh;
+    right: 50vw;
+    z-index: 0;
+}
+#customerNumber {
+    font-size: 20px;
 }

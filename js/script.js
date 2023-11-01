@@ -1,4 +1,4 @@
-const customers = document.getElementById("customers");
+const customers = document.getElementById("customerNumber");
 
 //while (true) {
     fetch(
@@ -11,6 +11,6 @@ const customers = document.getElementById("customers");
             return response.json();
         })
         .then((allData) => {
-            customers.innerText = customers.innerText + ' ' + allData.result[0].total;
+            customers.innerText = allData.result[0].total;
         })
 
